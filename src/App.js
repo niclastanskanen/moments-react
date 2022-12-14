@@ -29,7 +29,7 @@ function App() {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <setCurrentUser.Provider value={setCurrentUser}>
+      <SetCurrentUserContext.Provider value={setCurrentUser}>
         <div className={styles.App}>
           <NavBar />
           <Container className={styles.Main}>
@@ -41,7 +41,7 @@ function App() {
             </Switch>
           </Container>
         </div>
-      </setCurrentUser.Provider>
+      </SetCurrentUserContext.Provider>
     </CurrentUserContext.Provider>
   );
 }
